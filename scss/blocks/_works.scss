@@ -1,0 +1,174 @@
+@import '../utiles/mixins';
+
+.works{
+
+  background-color: #fff;
+  padding-bottom: 10.8rem;
+
+  &__title-block{
+    width: 55%;
+    margin: 0 auto;
+    margin-bottom: 16.1rem;
+    position: relative;
+  }
+
+  &__title{
+    padding-top: 11.7rem;
+  }
+
+  &__title-decoration:first-child{
+    @include whiteElement;
+      width: 8rem;
+      height: 8rem;
+      position: absolute;
+      top: -3.7rem;
+      right: 6.9rem;
+  }
+
+  &__title-decoration:nth-child(2){
+    @include whiteElement;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__title-decoration:nth-child(3){
+    @include yellowElement;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 2.4rem;
+    left: 2.7rem;
+  }
+
+  &__title-decoration:last-child{ 
+    @include yellowElement;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 17rem;
+  }
+
+  &__item{
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    max-width: 41.4rem;
+  }
+
+  &__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    height: 12rem;
+    background: linear-gradient(102.05deg, #F7F7F7 12.61%, rgba(242, 242, 242, 0.75) 91.76%);
+    box-shadow: 0px 4px 100px rgba(210, 210, 210, 0.86);
+    border-radius: 30px;
+  }
+
+  &__item-description{
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+    width: 90%;
+  }
+
+  &__table{
+    position: relative;
+    width: 100%;
+    max-width: 126.6rem;
+    background-color: #F99F3D;
+    margin: 0 auto;
+  }
+
+  &__table-text{
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #fff;
+  }
+
+  &__table-text:first-child{
+    text-align: right;
+    margin-right: 7rem;
+    padding-top: 6.3rem;
+  }
+
+  &__table-text:nth-child(2){
+    text-align: left;
+    margin-left: 9.4rem;
+    padding-bottom: 7.6rem;
+  }
+
+  &__table-item{
+    display: inline-block;
+    margin: 0;
+    padding: 1.5rem 3.8rem;
+    background: linear-gradient(102.05deg, #F7F7F7 12.61%, rgba(242, 242, 242, 0.75) 91.76%), #FFFFFF;
+    box-shadow: 0px 4px 100px rgba(210, 210, 210, 0.86);
+    border-radius: 30px;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #f99f3d;
+  }
+
+  &__table-item:nth-child(3){
+    position: absolute;
+    top: 3.2rem;
+    left: -6.5rem;
+  }
+
+  &__table-item:nth-child(4){
+    position: absolute;
+    top: 3.2rem;
+    left: 43.5rem;
+  }
+
+  &__table-item:nth-child(5){
+    position: absolute;
+    top: 0;
+    right: 9.5rem;
+    transform: translateY(-50%);
+  }
+
+  &__table-item:nth-child(6){
+    position: absolute;
+    bottom: 0;
+    left: 18.1rem;
+    transform: translateY(50%);
+  }
+
+  &__table-item:nth-child(7){
+    position: absolute;
+    bottom: 2.8rem;
+    left: 62.4rem;
+  }
+
+  &__table-item:nth-child(8){
+    position: absolute;
+    bottom: 2.8rem;
+    right: -6rem;
+  }
+
+}

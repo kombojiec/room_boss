@@ -37,7 +37,9 @@
 
   &>.decoration__item:first-child{
     margin-bottom: 0;
-    margin-right: 100%;
+    position: relative;
+    right: 50%;
+    transform: translateX(50%);
   }
 
   &>.decoration__item:nth-child(2){
