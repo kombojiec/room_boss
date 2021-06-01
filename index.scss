@@ -1,0 +1,20 @@
+// =============== vendor ==============>
+@import './scss/vendor/normalize';
+@import './scss/vendor/fonts';
+
+// =============== blocks ==============>
+@import './scss/blocks/body';
+@import './scss/blocks/container';
+@import './scss/blocks/document';
+@import './scss/blocks/section';
+@import './scss/blocks/footer';
+@import './scss/blocks/header';
+@import './scss/blocks/page';
+@import './scss/blocks/modal';
+@import './scss/blocks/button';
+@import './scss/blocks/decoration';
+// @import './scss';
+
+// =============== utiles ==============>
+@import './scss/utiles/visible';
+@import './scss/utiles/hidden';

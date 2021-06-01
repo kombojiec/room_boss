@@ -1,0 +1,54 @@
+.header{
+  margin: 0 auto;
+  padding: 3.6rem 0 6rem;
+  background: linear-gradient(181.49deg, rgba(255, 255, 255, 0) 59.07%, #FFFFFF 98.74%), #E7E7E9;
+
+  &__navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 11.3rem;
+  }
+  
+
+  &__contacts{
+    display: flex;
+    align-items: center;
+  }
+
+  &__link{
+    margin-right: 1.6rem;
+    font-size: 0;
+  }
+
+  &__link-phone{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.35;
+    color: #828282;
+    text-decoration: none;
+    mix-blend-mode: normal;
+  }
+
+  &__content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__description{
+    width: 53%;
+    max-width: 73.3rem;
+  }
+
+  &__title{
+    max-width: 73.3rem;
+    font-size: 6.2rem;
+  }
+
+  &__subtitle{
+    max-width: 47.4rem;
+    margin-bottom: 8rem;
+  }
+
+}

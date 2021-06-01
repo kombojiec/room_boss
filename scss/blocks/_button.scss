@@ -1,0 +1,22 @@
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.8rem 3rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.9rem;
+  text-align: center;
+  color: #fff;
+  border: none;
+  outline: none;
+
+  &_type{
+
+    &_yellow{
+      background-color: #F99F3D;
+    }
+
+  }
+
+}
