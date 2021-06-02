@@ -15,6 +15,14 @@
 
     &_yellow{
       background-color: #F99F3D;
+
+      &:hover{
+        background-color: #FBB971;
+      }
+
+      &:active{
+        background-color: #ED8A1F;
+      }
     }
 
   }

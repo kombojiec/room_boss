@@ -1,0 +1,216 @@
+@import '../utiles/mixins';
+
+.decision{
+  padding: 5.4rem 0 0;
+  position: relative;
+  background: linear-gradient(181.7deg, #FFFFFF 1.44%, rgba(255, 255, 255, 0) 49.25%), #E7E7E9;
+
+  &__header-wrapper{
+    width: 100%;
+    margin-bottom: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__title{
+    padding-top: 7.6rem;
+    max-width: 56.4rem;
+  }
+
+  &__subtitle{
+    font-size: 1.8rem;
+    max-width: 44.8rem;
+  }
+
+  &__decoration:nth-child(3){
+    @include whiteElement;
+    width: 12.8rem;
+    height: 8.4rem;
+    position: absolute;
+    top: 2.4rem;
+    left: -12.8rem;
+  }
+
+  &__decoration:nth-child(4){
+    @include yellowElement;
+    border-radius: 1rem;
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    left: -5rem;
+  }
+
+  &__decoration:nth-child(5){
+    @include whiteElement;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 3rem;
+    position: absolute;
+    top: 1.9rem;
+    right: 48.2rem;
+  }
+
+  &__decoration:nth-child(6){
+    @include whiteElement;
+    width: 11rem;
+    height: 6rem;
+    position: absolute;
+    top: 1.6rem;
+    right: 28rem;
+  }
+
+  &__decoration:nth-child(7){
+    @include yellowElement;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 0;
+    right: 27.6rem;
+  }
+
+  &__decoration:nth-child(8){
+    @include whiteElement;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 2.5rem;
+    right: 2rem;
+  }
+
+  &__decoration:nth-child(9){
+    @include yellowElement;
+    width: 3rem;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__decoration:nth-child(10){
+    @include yellowElement;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 5rem;
+    position: absolute;
+    top: 21rem;
+    right: 25.6rem;
+    z-index: 1;
+  }
+
+  &__decoration:nth-child(11){
+    @include whiteElement;
+    width: 14rem;
+    height: 14rem;
+    position: absolute;
+    top: 16.2rem;
+    right: 13.6rem;
+  }
+
+  &__decoration:nth-child(12){
+    @include yellowElement;
+    width: 12rem;
+    height: 12rem;
+    position: absolute;
+    top: 7.9rem;
+    right: 7.6rem;
+    ;
+  }
+
+  &__decoration:nth-child(13){
+    @include yellowElement;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 27.1rem;
+    right: 0;
+  }
+
+  &__items{
+    margin-bottom: 14rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4.8rem 7rem;
+  }
+
+  &__card{
+    position: relative;
+    background: linear-gradient(124.94deg, #F7F7F7 96.64%, rgba(242, 242, 242, 0.75) 107.02%);
+    box-shadow: 0px 4px 100px rgba(128, 128, 128, 0.3);
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3.2rem 3.2rem 4rem;
+  }
+
+  &__icon{
+    width: 12rem;
+    height: 12rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    background: linear-gradient(102.05deg, #F7F7F7 12.61%, rgba(242, 242, 242, 0.75) 91.76%), #FFFFFF;
+    box-shadow: 0px 4px 100px rgba(210, 210, 210, 0.86);
+    border-radius: 3rem;
+    position: absolute;
+    top: -3.2rem;
+    right: 3.2rem;
+  }
+
+  &__card-switcher{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 5.6rem;
+    height: 3.2rem;
+    margin-bottom: 1.6rem;
+    padding: 1px;
+    border-radius: 2rem;
+    background-color: #F99F3D;
+    box-sizing: border-box;
+
+    &_disabled{
+      justify-content: flex-start;
+      background-color: #E7E7E9;
+    }
+  }
+
+  &__card-toggle{
+    width: 2.72rem;
+    height: 2.72rem;
+    background: #FFFFFF;
+    box-shadow: 0px 0.8px 3.2px rgba(0, 0, 0, 0.08), 0px 0.8px 1.6px rgba(0, 0, 0, 0.08), 0px 3.2px 9.6px rgba(0, 0, 0, 0.16);  
+    border-radius: 50%;
+  }
+
+  &__card-title{
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: left;
+    max-width: 80%;
+  }
+
+  &__divider{
+    width: 100%;
+    margin-bottom: 1.6rem;
+    height: 0.2rem;
+    background-color: #FBB971;
+  }
+
+  &__card-description{
+    padding: 0;
+    margin: 0;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    color: #333;
+    text-align: left;
+  }
+
+}

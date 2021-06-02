@@ -8,8 +8,21 @@
   border-radius: 3rem;
   box-shadow: 0px 4px 100px rgba(128, 128, 128, 0.3);
   background: linear-gradient(124.94deg, #F7F7F7 96.64%, rgba(242, 242, 242, 0.75) 107.02%);
-  max-width: 52rem;
+  max-width: 61.3rem;
   margin: auto;
+  box-sizing: border-box;
+
+  &__cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
 
   &__close{
     position: absolute;
@@ -23,7 +36,6 @@
   }
 
   &__input{
-    margin-bottom: 4rem;
     width: 100%;
     font-size: 2rem;
     line-height: 1.4;
@@ -32,6 +44,26 @@
     color: #828282;
     background-color: transparent;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    &:focus{
+      outline: none;
+    }
+
+    &_invalid{
+      border-bottom: 1px solid #F57D75;
+    }
+
+    &_valid{
+      border-bottom: 2px solid #ED8A1F;
+    }
+  }
+  
+  &__label{
+    visibility: hidden;
+    margin-bottom: 4rem;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: #f57d75;
   }
 
   &__active{
@@ -51,6 +83,13 @@
     color: #fff;
     border: none;
     outline: none;
+    
+    &:disabled{
+      background-color: #F99F3D;
+      &:hover{
+        background-color: #F99F3D;
+      }
+    }
   }
 
   &__agreement{

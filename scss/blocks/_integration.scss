@@ -1,0 +1,60 @@
+.integration{
+
+  background-color: #fff;
+  padding: 16.5rem 0 14rem;
+
+  &__items{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem 4rem;
+  }
+
+  &__card{
+    position: relative;
+    background: linear-gradient(124.94deg, #F7F7F7 96.64%, rgba(242, 242, 242, 0.75) 107.02%);
+    box-shadow: 0px 4px 100px rgba(128, 128, 128, 0.3);
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2.4rem;
+  }
+
+  &__card-switcher{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 5.6rem;
+    height: 3.2rem;
+    margin-bottom: 1.6rem;
+    padding: 1px;
+    border-radius: 2rem;
+    background-color: #48B452;
+    box-sizing: border-box;
+
+    &_disabled{
+      justify-content: flex-start;
+      background-color: #E7E7E9;
+    }
+  }
+
+  &__card-toggle{
+    width: 2.72rem;
+    height: 2.72rem;
+    background: #FFFFFF;
+    box-shadow: 0px 0.8px 3.2px rgba(0, 0, 0, 0.08), 0px 0.8px 1.6px rgba(0, 0, 0, 0.08), 0px 3.2px 9.6px rgba(0, 0, 0, 0.16);  
+    border-radius: 50%;
+  }
+
+  &__card-title{
+    margin: 0;
+    padding: 0;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: left;
+  }
+
+}
