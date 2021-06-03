@@ -527,7 +527,7 @@ template {
     position: absolute;
     top: 2.4rem;
     right: 2.4rem;
-    background: center/contain no-repeat url("../../images/close.svg");
+    background: center/contain no-repeat url("./images/close.svg");
     width: 3.2rem;
     height: 3.2rem;
     border: none;
