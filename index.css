@@ -786,11 +786,11 @@ template {
       right: -70%;
       top: -2rem; }
     .decoration > .decoration__item:nth-child(4) {
-      top: 45rem; }
+      top: 50rem; }
     .decoration > .decoration__item:last-child {
       top: 45rem; }
     .decoration .decoration__row:nth-child(3) {
-      top: 53rem; } }
+      top: 60rem; } }
 @media (max-width: 675px) {
   .decoration > .decoration__row:nth-child(3) {
     top: 62rem; }
