@@ -586,6 +586,31 @@ template {
     line-height: 1.5rem;
     color: #828282;
     text-align: left; }
+  .modal__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1.5rem;
+    background: linear-gradient(102.05deg, #F7F7F7 12.61%, rgba(242, 242, 242, 0.75) 91.76%);
+    -webkit-box-shadow: 0px 4px 100px rgba(128, 128, 128, 0.3);
+            box-shadow: 0px 4px 100px rgba(128, 128, 128, 0.3);
+    border-radius: 3rem;
+    position: absolute;
+    top: 0;
+    right: 8rem;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .modal__header-text {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-left: 2rem; }
 
 @media (max-width: 640px) {
   .modal {
@@ -601,7 +626,9 @@ template {
     .modal__submit {
       width: 100%;
       max-width: 30rem;
-      margin: auto; } }
+      margin: auto; }
+    .modal__header-text {
+      font-size: 1.6rem; } }
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
