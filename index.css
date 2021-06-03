@@ -380,7 +380,7 @@ template {
   padding: 3.6rem 0 6rem;
   background: linear-gradient(181.49deg, rgba(255, 255, 255, 0) 59.07%, #FFFFFF 98.74%), #E7E7E9; }
   .header__menu {
-    background: center/contain no-repeat url("../../images/menu.svg");
+    background: center/contain no-repeat url("./images/menu.svg");
     width: 3.2rem;
     height: 3.2rem;
     position: absolute;
@@ -1523,7 +1523,7 @@ template {
     width: 4.7rem;
     height: 3.2rem; }
   .menu__button {
-    background: center/contain no-repeat url(../../images/close.svg);
+    background: center/contain no-repeat url(./images/close.svg);
     width: 2.4rem;
     height: 2.4rem;
     border: none;
