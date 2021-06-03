@@ -22,6 +22,7 @@
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 2;
   }
 
   &__close{
@@ -83,7 +84,7 @@
     color: #fff;
     border: none;
     outline: none;
-    
+
     &:disabled{
       background-color: #F99F3D;
       &:hover{
@@ -99,4 +100,25 @@
     text-align: left;
   }
 
+}
+
+@media (max-width: 640px){
+  .modal{
+    width: 95%;
+    padding: 8rem 2rem 5rem;
+
+    &__active{
+      flex-direction: column;
+    }
+
+    &__input{
+      font-size: 1.4rem;
+    }
+
+    &__submit{
+      width: 100%;
+      max-width: 30rem;
+      margin: auto;
+    }
+  }
 }

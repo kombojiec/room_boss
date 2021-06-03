@@ -1,0 +1,76 @@
+.menu{
+  position: absolute;
+  top: -150vh;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  background: linear-gradient(181.49deg, rgba(255, 255, 255, 0) 56.58%, #FFFFFF 98.74%), #E7E7E9;
+  padding: 2rem;
+  z-index: 3;
+  transition: all linear .5s;
+
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 3.2rem;
+    width: 80%;
+  }
+
+  &__logo{
+    width: 4.7rem;
+    height: 3.2rem;
+  }
+
+  &__button{
+    background: center / contain no-repeat url(../../images/close.svg);
+    width: 2.4rem;
+    height: 2.4rem;
+    border: none;
+    outline: none;
+  }
+
+  &__nav-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item{
+    margin-bottom: 2.8rem;
+  }
+
+  &__link{
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #000;
+    text-decoration: none;
+
+    &:hover{
+      text-shadow: 0 0 0.5rem rgba(0, 0, 0, .5);
+    }
+  }
+
+  &__socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.6rem;
+  }
+
+  &__social-link:first-child{
+    margin-right: 2rem;
+  }
+
+  &__order{
+    margin: 0 auto;
+    width: 80%;
+    max-width: 30rem;
+  }
+}

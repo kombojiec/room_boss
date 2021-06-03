@@ -1,7 +1,20 @@
 .header{
+  position: relative;
   margin: 0 auto;
   padding: 3.6rem 0 6rem;
   background: linear-gradient(181.49deg, rgba(255, 255, 255, 0) 59.07%, #FFFFFF 98.74%), #E7E7E9;
+
+  &__menu{
+    background: center / contain no-repeat url('../../images/menu.svg');
+    width: 3.2rem;
+    height: 3.2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    outline: none;
+    display: none;
+  }
 
   &__navigation{
     display: flex;
@@ -61,4 +74,67 @@
     margin-bottom: 8rem;
   }
 
+}
+
+
+@media (max-width: 960px){
+  .header{
+
+    &__menu{
+      display: block;
+    }
+
+    &__navigation{
+      margin-bottom: 2rem;
+    }
+
+    &__contacts{
+      display: none;
+    }
+
+    &__content{
+      flex-direction: column;
+    }
+
+    &__decoration{
+      order: 1;
+    }
+
+    &__description{
+      order: 2;
+    }
+
+    &__title{
+      font-size: 4.8rem;
+    }
+
+    &__description{
+      width: 90%;
+    }
+
+    &__arrow{
+      display: none;
+    }
+
+    &__subtitle{
+      margin-bottom: 2.4rem;
+    }
+
+  }
+}
+
+@media (max-width: 640px){
+  .header{
+
+    &__title{
+      font-size: 2.8rem;
+      line-height: 3.3rem;
+      margin-bottom: 2.4rem;
+    }
+
+    &__subtitle{
+      font-size: 1.6rem;
+      margin: 0 0 2.4rem;
+    }
+  }
 }

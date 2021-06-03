@@ -24,7 +24,30 @@
         background-color: #ED8A1F;
       }
     }
-
   }
 
+  &.modal__submit{
+    margin-bottom: 0;
+  }
+
+}
+
+
+@media (max-width: 960px){
+  .button{
+
+    &_type_yellow{
+      margin-bottom: 20rem;
+    }
+  }
+}
+
+@media (max-width: 640px){
+  .button{
+
+    &_type_yellow{
+      font-size: 1.8rem;
+      line-height: 1.35;
+    }
+  }
 }

@@ -7,6 +7,10 @@ document.addEventListener('DOMContentLoaded', function(){
   const closeModalButton = document.querySelector('.modal__close');
   const orderButton = document.querySelector('.order');
   const submitButton = form.querySelector('.modal__submit')
+  const menuButton = document.querySelector('.header__menu');
+  const menu = document.querySelector('.menu');
+  const menuOrderButton = document.querySelector('.menu__order');
+  const closeMenuButton = document.querySelector('.menu__button');
   const inputs = Array.from(form.querySelectorAll('.modal__input'));
   const labels = Array.from(form.querySelectorAll('.modal__label'));
 
@@ -33,6 +37,12 @@ document.addEventListener('DOMContentLoaded', function(){
   orderButton.addEventListener('click', () => {
     resetFormErrors()
     openModal();
+  })
+
+  menuOrderButton.addEventListener('click', () => {
+    resetFormErrors()
+    openModal();
+    closeMenuButton.click();
   })
 
   closeModalButton.addEventListener('click', closeModal);
@@ -96,6 +106,32 @@ document.addEventListener('DOMContentLoaded', function(){
     closeModal();
   })
 
+
+  // ============= Валидация формы =============>
+
+  menuButton.addEventListener('click', () => {
+    menu.style.top = 0;
+  })
+
+  closeMenuButton.addEventListener('click', () => {
+    menu.style.top = '-150vh';
+  })
+
+
+  // <<============== Деактивация карточек =================>>
+
+  const decisionCards = document.querySelectorAll('.decision__card-switcher');
+  const decision = document.querySelector('.decision');
+  const integration = document.querySelector('#integration');
+  const integrationCards = document.querySelectorAll('.integration__card-switcher');
+  document.addEventListener('scroll', event => {
+    if(window.pageYOffset >= decision.offsetTop){
+      decisionCards.forEach(card => card.classList.add('decision__card-switcher_disabled'));
+    }
+    if(window.pageYOffset >= integration.offsetTop){
+      integrationCards.forEach(card => card.classList.add('integration__card-switcher_disabled'));
+    }
+  })
 
 
   // <<============== document's end =================>>

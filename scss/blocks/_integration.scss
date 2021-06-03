@@ -2,6 +2,7 @@
 
   background-color: #fff;
   padding: 16.5rem 0 14rem;
+  position: relative;
 
   &__items{
     display: grid;
@@ -57,4 +58,27 @@
     text-align: left;
   }
 
+}
+
+@media (max-width: 960px){
+  .integration{
+
+    &__items{
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 640px){
+  .integration{
+
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    &__items{
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+    }
+  }
 }
