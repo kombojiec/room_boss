@@ -17,11 +17,13 @@ document.addEventListener('DOMContentLoaded', function(){
   // ============= Открытие/закрытие модального окна =============>
   const openModal = () => {
     modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
   }  
 
   const closeModal = () => {
     modal.classList.add('hidden');
     form.reset();
+    document.body.style.overflow = 'auto';
   }
 
   function resetFormErrors(){
@@ -41,8 +43,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
   menuOrderButton.addEventListener('click', () => {
     resetFormErrors()
-    openModal();
     closeMenuButton.click();
+    openModal();
   })
 
   closeModalButton.addEventListener('click', closeModal);
@@ -107,14 +109,16 @@ document.addEventListener('DOMContentLoaded', function(){
   })
 
 
-  // ============= Валидация формы =============>
+  // ============= Меню =============>
 
   menuButton.addEventListener('click', () => {
     menu.style.top = 0;
+    document.body.style.overflow = 'hidden';
   })
 
   closeMenuButton.addEventListener('click', () => {
     menu.style.top = '-150vh';
+    document.body.style.overflow = 'auto';
   })
 
 
